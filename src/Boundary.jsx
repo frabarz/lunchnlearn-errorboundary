@@ -7,6 +7,8 @@ import React, {Component} from "react";
 
 /** @extends {Component<{}, OwnState>} */
 class Boundary extends Component {
+  static displayName = "ErrorBoundary";
+
   state = {
     hasError: false,
     message: "",

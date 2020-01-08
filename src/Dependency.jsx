@@ -17,4 +17,6 @@ const Dependency = function(props) {
   return <button onClick={daButton}>{props.label}</button>;
 };
 
+Dependency.displayName = "Dependency";
+
 export default Dependency;

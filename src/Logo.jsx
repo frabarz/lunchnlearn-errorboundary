@@ -34,4 +34,6 @@ const Logo = function(props) {
   );
 };
 
+Logo.displayName = "DatawheelLogo";
+
 export default Logo;

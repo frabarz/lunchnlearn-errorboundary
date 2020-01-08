@@ -5,8 +5,8 @@ import Logo from "./Logo";
 import Dependency from "./Dependency";
 import Boundary from "./Boundary";
 
-function App() {
-  // All's right with the world.
+/** @type {React.FC<{}>} */
+const App = function App() {  
   const [stop, setStop] = useState(false);
   const toggleStop = () => setStop(!stop);
 
@@ -28,5 +28,7 @@ function App() {
     </div>
   );
 }
+
+App.displayName = "App";
 
 export default App;
